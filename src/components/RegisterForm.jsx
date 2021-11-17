@@ -108,7 +108,7 @@ const RegisterForm =  () => {
             console.log(err)
         }
     }
-
+//---------------------------------RETURNS---------------------------------------------
     return( 
         <div style = {formStyle}>
             <p style = {paragraphStyle}>Register</p>

@@ -88,7 +88,7 @@ const LoginForm = () => {
             console.log(err)
         }
     }
-
+//---------------------------------RETURNS---------------------------------------------
     return(
         <div style = {formStyle}>
             <h2 style= {textStyle}>Login</h2>
