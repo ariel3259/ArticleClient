@@ -168,7 +168,7 @@ const ButtonCRD =  props =>{
             case "create" :
                 try{
                     const responseOfCreate = await axios.post(url,data);
-                    Swal.fire(response.data,"","success").then(() => window.location.reload());
+                    Swal.fire(responseOfCreate.data,"","success").then(() => window.location.reload());
                 }catch(err) {
                     console.log(err)
                 }
@@ -178,7 +178,7 @@ const ButtonCRD =  props =>{
                 console.log(data)
                 try{
                     const responseOfUpdate = await axios.put(url,data);
-                    Swal.fire(response.data,"","success").then(() => window.location.reload());
+                    Swal.fire(responseOfUpdate.data,"","success").then(() => window.location.reload());
                 }catch(err){
                     console.log(err);
                 } 
